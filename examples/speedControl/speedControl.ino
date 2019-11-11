@@ -6,7 +6,7 @@
  * \brief
  * This example demonstrates how to control the speed of motor by using the PWM units 
  * of the TLE94112 shield
- * \detail
+ * \details
  * Attaching a potentiometer on an analog input pin, which will than controll the 
  * setting of the TLE94112 internal PWM unit and therefore the speed of the motor.
  * The TLE94112 has three seperat PWM units which can be attached to any combination

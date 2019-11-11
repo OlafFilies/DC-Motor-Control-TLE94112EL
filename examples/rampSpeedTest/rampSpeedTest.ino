@@ -5,7 +5,7 @@
  * \version     1.4.1
  * \brief
  * This example measure the rampspeed of an attached motor with the TLE94112 shield
- * \detail
+ * \details
  * By attaching a motor to the TLE94112 and running a testcase scenario, we can measure the
  * optimal values for the rampSpeed function. This function allows us to smoothly start, stop,
  * raise or break the motor.

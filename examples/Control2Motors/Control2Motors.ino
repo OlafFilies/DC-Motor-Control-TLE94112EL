@@ -6,7 +6,7 @@
  * \brief
  * This example demonstrates how to control two motors, their speed and direction
  * with the TLE94112 shield
- * \detail
+ * \details
  * By attaching a Tle94112 controller object to two Tle94112Motor objects, we can generate
  * an easy to handle motor object for each motor. We can easily attach this motor object
  * two any of the halfbridges and to any of the PWM units. This is done in the setup part.

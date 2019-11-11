@@ -5,7 +5,7 @@
  * \version     1.4.1
  * \brief
  * This example to run a motor with the rampSpeed function
- * \detail
+ * \details
  * This example also demonstrats how to attach a bigger motor on 4 halfbridges with a total 
  * current of 1.8 A. Originally designed to test Lego (R) Powerfunktions or Mindstorm motors,
  * this sketch can be used to simply run a motor smoothly with different speeds
