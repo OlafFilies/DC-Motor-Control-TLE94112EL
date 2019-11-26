@@ -1,13 +1,13 @@
 /*!
- * \file 		TLE94112_conf.h
+ * \file        TLE94112_conf.h
  * \name        TLE94112_conf.h - automatically included library
  * \author      Infineon Technologies AG
  * \copyright   2019 Infineon Technologies AG
  * \version     1.4.1
- * \brief 		This file can optionally be included in projects that use Infineon's 
- * 				DC Motor Control Shield with TLE94112
- * 				It provides a higher abstraction for controlling motors with the TLE94112 
- * 				acting as an output driver
+ * \brief       This file can optionally be included in projects that use Infineon's 
+ *              DC Motor Control Shield with TLE94112
+ *              It provides a higher abstraction for controlling motors with the TLE94112 
+ *              acting as an output driver
  * 
  * 
  * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the

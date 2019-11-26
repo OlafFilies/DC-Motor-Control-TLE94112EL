@@ -1,13 +1,14 @@
 /*!
- * \file 		Tle94112Motor.h
+ * \file        Tle94112Motor.h
  * \name        Tle94112Motor.h - optionally include library
  * \author      Infineon Technologies AG
  * \copyright   2019 Infineon Technologies AG
  * \version     1.4.1
- * \brief 		This file can optionally be included in projects that use Infineon's 
- * 				DC Motor Control Shield with TLE94112
- * 				It provides a higher abstraction for controlling motors with the TLE94112 
- * 				acting as an output driver
+ * \brief       This file can optionally be included in projects that use Infineon's 
+ *              DC Motor Control Shield with TLE94112
+ *              It provides a higher abstraction for controlling motors with the TLE94112 
+ *              acting as an output driver
+ * 
  * \details
  * The Infineon TLE94112EL DC motor controller shield is able to handle 6 motors with a max. current of 0.9 A
  * independently and additional 5 motors cascaded. The twelve half-bridges can be arranged also together,

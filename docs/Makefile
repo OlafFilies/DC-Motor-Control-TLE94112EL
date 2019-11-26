@@ -9,7 +9,9 @@ FILE     := ./library.properties
 name	 := $(name < $(FILE))
 version	 := $(version < $(FILE))
 
-# Directories 
+# Directories
+DOXY_NAME ?= $(name)
+DOXY_NUMBER ?= $(version)
 SRC_DIR ?= ../
 DOC_DIR ?= ./
 DOC_IMG_DIR ?= ./img

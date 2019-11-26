@@ -1,4 +1,4 @@
-# Examples2Go
+# Examples
 
 ## List of examples
 To run this examples use either the Arduino IDE or something similar like the [PlatformIO](https://platformio.org/platformio-ide?utm_source=github&utm_medium=xmc-for-arduino) module for [code](https://code.visualstudio.com/) or [atom](https://atom.io/)

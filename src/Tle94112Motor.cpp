@@ -1,13 +1,14 @@
 /*!
- * \file 		Tle94112Motor.cpp
+ * \file        Tle94112Motor.cpp
  * \name        Tle94112Motor.cpp - optionally include library
  * \author      Infineon Technologies AG
  * \copyright   2019 Infineon Technologies AG
  * \version     1.4.1
- * \brief 		This file can optionally be included in projects that use Infineon's 
- * 				DC Motor Control Shield with TLE94112
- * 				It provides a higher abstraction for controlling motors with the TLE94112 
- * 				acting as an output driver
+ * \brief       This file can optionally be included in projects that use Infineon's 
+ *              DC Motor Control Shield with TLE94112
+ *              It provides a higher abstraction for controlling motors with the TLE94112 
+ *              acting as an output driver
+ * 
  * \details
  * The Infineon TLE94112EL DC motor controller shield is able to handle 6 motors with a max. current of 0.9 A
  * independently and additional 5 motors cascaded. The twelve half-bridges can be arranged also together,
@@ -96,7 +97,7 @@ void Tle94112Motor::initConnector(Tle94112Motor::ePolarity pol,
 		mConnectors[pol].channel = channel;
 		mConnectors[pol].freq = freq;
 		mConnectors[pol].active_fw = FALSE;
-		for(uint8_t i=0; i<TLE94112MOTOR_MAX_CONNECTORS; i++)
+		for(uint8_t i = 0; i < TLE94112MOTOR_MAX_CONNECTORS; i++)
 		{
 			mConnectors[pol].halfbridges[i] = outputs[i];
 		}
@@ -201,10 +202,8 @@ void Tle94112Motor::stop(uint8_t force)
 		mSpeed = force;
 		// set dutycycle depending on parameter force
 		// higher force lets the motor stop quicker
-		mDriver->configPWM(mConnectors[HIGHSIDE].channel,
-				mConnectors[HIGHSIDE].freq, force);
-		mDriver->configPWM(mConnectors[LOWSIDE].channel,
-				mConnectors[LOWSIDE].freq, force);
+		mDriver->configPWM(mConnectors[HIGHSIDE].channel, mConnectors[HIGHSIDE].freq, force);
+		mDriver->configPWM(mConnectors[LOWSIDE].channel, mConnectors[LOWSIDE].freq, force);
 		//connect highside pins to low
 		for(uint8_t idx = 0u; idx < TLE94112MOTOR_MAX_CONNECTORS; idx++)
 		{
@@ -259,10 +258,8 @@ void Tle94112Motor::setSpeed(int16_t speed)
 		else if(speed > 0)
 		{
 			mSpeed = static_cast<uint8_t>(speed);
-			mDriver->configPWM(mConnectors[HIGHSIDE].channel, 
-					mConnectors[HIGHSIDE].freq, mSpeed);
-			mDriver->configPWM(mConnectors[LOWSIDE].channel, 
-					mConnectors[LOWSIDE].freq, mSpeed);
+			mDriver->configPWM(mConnectors[HIGHSIDE].channel, mConnectors[HIGHSIDE].freq, mSpeed);
+			mDriver->configPWM(mConnectors[LOWSIDE].channel, mConnectors[LOWSIDE].freq, mSpeed);
 			if(mMode != FORWARD)
 			{
 				//change configuration to running forward

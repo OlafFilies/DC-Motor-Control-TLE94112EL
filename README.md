@@ -42,6 +42,10 @@ For the description of the [examples](docs/Examples.md)
 ## Library documentation
 The doxygen [library documentation](https://infineon.github.io/DC-Motor-Control-TLE94112EL/).
 
+## Hardware
+The evaluation board is designed to run on Arduino/Genuino and compatible headers
+Infineon's XMC1100 Boot Kit, XMC4700 Relax Kits or XMC4800 Relax Kit are fully compatible by using the
+[XMC-for-Arduino](https://github.com/Infineon/XMC-for-Arduino) port and this library
 
 ## More information and links
 * [Infineon Maker page](https://www.infineon.com/cms/en/tools/landing/infineon-for-makers/#overview)
@@ -51,6 +55,7 @@ The doxygen [library documentation](https://infineon.github.io/DC-Motor-Control-
 * [TLE94112EL datasheet](https://www.infineon.com/dgdl/Infineon-TLE94112EL-DS-v01_00-EN.pdf?fileId=5546d462576f347501579a2795837d3e)
 * [TLE941xy Application Note](https://www.infineon.com/dgdl/Infineon-TLE941xy-AN-v01_00-EN-AN-v01_00-EN-AN-v01_00-EN.pdf?fileId=5546d4625b62cd8a015bc8db26c831e3).
 * [Tle94112 pinout picture](https://raw.githubusercontent.com/infineon/assets/master/Pictures/TLE94112_Arduino_Shield_Pin_out.png)
+* [XMC-for-Arduino](https://github.com/Infineon/XMC-for-Arduino)
 
 
 
